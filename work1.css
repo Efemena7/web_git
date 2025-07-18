@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.one{
+    width: 600px;
+    height: 400px;
+    transition: ease-in-out 0.3s;
+}
+
+.one:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+img{
+    width: 400px;
+    height: 300px;
+    transition: width 0.7s, height 0.7s;
+}
+
+img:hover{
+    cursor: pointer;
+    width: 600px;
+    height: 400px;
+}
+
+div{
+    width: 250px;
+    height: 190px;
+    background-color: aquamarine;
+    transition: width 0.9s, height 0.9s, transform 0.9s;
+}
+
+div:hover{
+    cursor: pointer;
+    width: 350px;
+    height: 288px;
+    transform: rotate(180deg);
+}
+
+.two{
+    width: 250px;
+    height: 190px;
+    background-color:bisque;
+    animation: moveleft 7s ease-in 7 normal;
+}
+
+@keyframes moveleft{
+    from{
+        background-color: bisque;
+        transform: translateX(700px);
+    }
+    to{
+        background-color:red;
+        transform: translateX(-600px)
+    };
+}
